@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
-
+import HomeImage from "../../public/homeBanner.webp"
 export default function HomeSectionOne() {
   return (
     <>
@@ -8,7 +8,7 @@ export default function HomeSectionOne() {
   <link
     rel="preload"
     as="image"
-    href="https://braininventory.s3.us-east-2.amazonaws.com/images/homeBanner.webp"
+    href={HomeImage}
     type="image/webp"
   />
 </Head>
@@ -35,7 +35,7 @@ export default function HomeSectionOne() {
 
             <div className=" md:flex hidden justify-center">
               <Image
-                src="https://braininventory.s3.us-east-2.amazonaws.com/images/homeBanner.webp"
+                src={HomeImage}
                 alt="custom software development solutions"
                 width={1200}
                 height={800}
